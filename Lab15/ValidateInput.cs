@@ -27,5 +27,22 @@ namespace Lab15
 
             }return input;
         }
+
+        public static string ValidContinueInput()
+
+        {
+            string input = Console.ReadLine().ToUpper();
+            while (true)
+                {
+                if (input != "Y" && input != "N")
+                {
+                    Console.WriteLine("ERROR, PLEASE ENTER Y OR N");
+                    input = Console.ReadLine().ToUpper();
+                    continue;
+
+                }break;
+
+            }return input;
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace Lab15
                 }
                 string continueinput;
                 Console.WriteLine("Would you like to try again?");
-                continueinput = Console.ReadLine().ToUpper();
+                continueinput = ValidateInput.ValidContinueInput();
                 if (continueinput == "Y")
                 {
                     AskToContinue = true;
