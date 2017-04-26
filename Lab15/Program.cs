@@ -11,6 +11,8 @@ namespace Lab15
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the Countries Maintenance Application!");
+            Console.WriteLine();
 
             bool AskToContinue = false;
 
@@ -24,26 +26,28 @@ namespace Lab15
                     string choice = Console.ReadLine();
                     CountriesTextFile.WriteToFile(choice);
                     Console.WriteLine("Your country has been saved!");
-
                 }
                 else if (input == "2")
                 {
+                    Console.WriteLine();
                     CountriesTextFile.ReadFromFile();
-
                 }
 
                 else
                 {
                     Console.WriteLine("Thanks for trying!");
                     break;
-
                 }
+
+                Console.WriteLine();
+
                 string continueinput;
                 Console.WriteLine("Would you like to try again?");
                 continueinput = ValidateInput.ValidContinueInput();
                 if (continueinput == "Y")
                 {
                     AskToContinue = true;
+                    Console.Clear();
                 }
                 else
                 {

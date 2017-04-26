@@ -1,4 +1,4 @@
-﻿1
+﻿
 United States
 Canada
 Mexico
@@ -7,3 +7,7 @@ Russia
 Yemen
 Palestine
 Jordan
+UK
+France
+Germany
+Spain
