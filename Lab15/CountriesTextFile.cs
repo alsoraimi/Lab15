@@ -14,7 +14,7 @@ namespace Lab15
             StreamWriter sw = new StreamWriter("../../Countries.txt", true);  //the ..//..// tells it to go two levels up
 
 
-            sw.WriteLine(input);
+            sw.WriteLine(input); // gets user input on which country to add to text file
 
             sw.Close();
         }
@@ -25,10 +25,13 @@ namespace Lab15
 
             string FileContent = rd.ReadToEnd();  //read to end reads the whole file
 
-            Console.WriteLine(FileContent);
+            Console.WriteLine(FileContent);   // lists all countries added to text file on console
             rd.Close();
             return FileContent;
         }
+
+
+
 
     }
 }

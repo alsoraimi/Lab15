@@ -14,7 +14,7 @@ namespace Lab15
             Console.WriteLine("Welcome to the Countries Maintenance Application!");
             Console.WriteLine();
 
-            bool AskToContinue = false;
+            bool AskToContinue = false;         // loop to ask user to continue or not
 
             do
             {
@@ -23,19 +23,19 @@ namespace Lab15
                 if (input == "1")
                 {
                     Console.WriteLine("Please input a country");
-                    string choice = Console.ReadLine();
+                    string choice = Console.ReadLine();                 // get user input
                     CountriesTextFile.WriteToFile(choice);
                     Console.WriteLine("Your country has been saved!");
                 }
                 else if (input == "2")
                 {
                     Console.WriteLine();
-                    CountriesTextFile.ReadFromFile();
+                    CountriesTextFile.ReadFromFile();    //lists countries from text file
                 }
 
                 else
                 {
-                    Console.WriteLine("Thanks for trying!");
+                    Console.WriteLine("Thanks for trying!");  //if user selects exit
                     break;
                 }
 
