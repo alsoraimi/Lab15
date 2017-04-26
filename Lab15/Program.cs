@@ -16,10 +16,8 @@ namespace Lab15
 
             do
             {
-                string input;
 
-                Console.WriteLine("Please choose an option 1-Add a country,  2-See list of countries,  or 3-Exit");
-                input = Console.ReadLine();
+               string input = ValidateInput.ValidInput();
                 if (input == "1")
                 {
                     Console.WriteLine("Please input a country");
